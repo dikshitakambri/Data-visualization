@@ -28,4 +28,8 @@ ax.set(xlabel='xlabel',ylabel='ylabel', title='Title')
 #Incorporating statistical data
 
 data.groupby('species').mean().plot(color=['red','blue','yellow','green'],figsize=(6,6),fontsize=10.0)
+
+#statistical plot using seaborn
+
+sns.jointplot(x='sepal_length', y='sepal_width', data=data, height=5)
 plt.show()
