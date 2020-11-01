@@ -24,4 +24,8 @@ ax.barh(np.arange(10),data.sepal_length[:10])
 ax.set_yticks(np.arange(0.4,10.4,1))
 ax.set_yticklabels(np.arange(1,11))
 ax.set(xlabel='xlabel',ylabel='ylabel', title='Title')
+
+#Incorporating statistical data
+
+data.groupby('species').mean().plot(color=['red','blue','yellow','green'],figsize=(6,6),fontsize=10.0)
 plt.show()
