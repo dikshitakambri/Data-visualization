@@ -32,4 +32,6 @@ data.groupby('species').mean().plot(color=['red','blue','yellow','green'],figsiz
 #statistical plot using seaborn
 
 sns.jointplot(x='sepal_length', y='sepal_width', data=data, height=5)
+
+sns.pairplot(data, hue='species', height=3)
 plt.show()
